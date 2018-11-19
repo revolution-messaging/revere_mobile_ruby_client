@@ -6,6 +6,7 @@ module RevereMobile
   module Default
     USERNAME = nil
     PASSWORD = nil
+    API_KEY = nil
     API_ENDPOINT = 'https://mobile.reverehq.com/api/v1/'
     SHORTCODE_ID = nil
     USER_AGENT = "Revere Mobile Ruby Gem #{RevereMobile::VERSION}"
@@ -17,6 +18,10 @@ module RevereMobile
 
       def password
         PASSWORD
+      end
+
+      def api_key
+        API_KEY
       end
 
       def api_endpoint

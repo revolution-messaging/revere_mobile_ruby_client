@@ -105,6 +105,12 @@ module RevereMobile
         RevereMobile.configuration.password = password
         expect(RevereMobile.configuration.inspect).to_not include(password)
       end
+
+      it 'masks the api_key' do
+        api_key = Faker::Internet.password
+        RevereMobile.configuration.api_key = api_key
+        expect(RevereMobile.configuration.inspect).to_not include(api_key)
+      end
     end
   end
 end

@@ -25,6 +25,17 @@ module RevereMobile
     # Most accounts will have access to only one of these.
     #
     # @return [String, nil]
+    attr_accessor :api_key
+
+    # The Revere Mobile API KEY
+    #
+    # The `api_key` setting is used for authenticating requests.
+    # This approach does not require an active session ID.
+    # This method is more appropriate for integrations
+    # that always use the same credentials
+    # and do not want to add the complexity of session logic.
+    #
+    # @return [String, nil]
     attr_accessor :shortcode_id
 
     # The API Endpoint url. Which endpoint you should use is determined by which
@@ -40,6 +51,12 @@ module RevereMobile
     # @return [String]
     attr_accessor :user_agent
 
+    # The user session. This defaults to nil but is written to
+    # once the authentication request has been made.
+    #
+    # @return [String]
+    attr_accessor :session
+
     def initialize
       setup
     end
@@ -51,7 +68,9 @@ module RevereMobile
       @password = RevereMobile::Default.password
       @shortcode_id = RevereMobile::Default.shortcode_id
       @api_endpoint = RevereMobile::Default.api_endpoint
+      @api_key = RevereMobile::Default.api_key
       @user_agent = RevereMobile::Default.user_agent
+      @session = nil
       self
     end
 
@@ -64,6 +83,10 @@ module RevereMobile
 
       if RevereMobile.configuration.password
         filter_value!(inspected, RevereMobile.configuration.password)
+      end
+
+      if RevereMobile.configuration.api_key
+        filter_value!(inspected, RevereMobile.configuration.api_key)
       end
 
       inspected

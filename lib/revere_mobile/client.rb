@@ -3,6 +3,9 @@
 require 'revere_mobile/connection'
 require 'revere_mobile/request'
 require 'revere_mobile/response'
+require 'revere_mobile/client/authentication'
+require 'revere_mobile/client/campaign'
+require 'revere_mobile/client/shortcode'
 
 module RevereMobile
   class Client
@@ -17,5 +20,8 @@ module RevereMobile
     include RevereMobile::Connection
     include RevereMobile::Request
     include RevereMobile::Response
+    include RevereMobile::Client::Authentication
+    include RevereMobile::Client::Campaign
+    include RevereMobile::Client::Shortcode
   end
 end

@@ -13,7 +13,9 @@ module RevereMobile
         url: config.api_endpoint,
         headers: {
           'Accept' => 'application/json; charset=utf-8',
-          'User-Agent ' => config.user_agent
+          'User-Agent ' => config.user_agent,
+          'Cookie' => config.session,
+          'Authorization' => config.api_key
         }
       }
 
