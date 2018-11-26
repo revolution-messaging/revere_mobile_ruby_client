@@ -1,0 +1,39 @@
+{
+  "page": 1,
+  "size": -1,
+  "total": 2,
+  "collection": [
+    {
+      "id": "5b46a1n27647356ba405e604",
+      "account": "4v6fa6177a475eefd68fb5ef",
+      "group": "55q3a0450cf2be431105d049",
+      "shortCode": "4ebb4b5afda5efeeec370e8a",
+      "headNodes": [
+        "5b46a1a276q7356ba405e602"
+      ],
+      "lists": [
+        "5b46998c27n8403cb788345b"
+      ],
+      "name": "Test Mobile Flow 1",
+      "campaign": "7b4699e77647356ba405c3f3",
+      "status": "ACTIVE",
+      "frequency": "Periodic",
+      "programName": "Mobile FLow Test"
+    },
+    {
+      "id": "5b4e222c76473534a27e4a3e",
+      "account": "4e6fn6177a475eefd68fb5ef",
+      "group": "54ef91940cf2a3da77053ccd",
+      "shortCode": "4eqb4b5afda5efeeec370e8a",
+      "headNodes": [
+        "5b4e222c76473534a27e4a3d"
+      ],
+      "lists": [],
+      "name": "Another Test",
+      "campaign": "58a60ebbe4b0fab823eed2b1",
+      "status": "ACTIVE",
+      "frequency": "Periodic",
+      "programName": "Test"
+    }
+  ]
+}

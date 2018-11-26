@@ -1,0 +1,34 @@
+{
+  "page": 1,
+  "size": -1,
+  "total": 1,
+  "collection": [
+    {
+      "id": "4ebbb0a35cc425ea777cf664",
+      "provider": "Mblox",
+      "country": "US",
+      "countryCode": "1",
+      "dedicated": true,
+      "description": "RevMsg",
+      "maxSmsLength": 160,
+      "profileId": "RM",
+      "shortcode": "64336",
+      "testPrefix": null,
+      "defaultStopResponse": "You will not receive any more mobile updates from {subscriber.recentMf.programName; default=\"64336\"}.",
+      "defaultHelpResponse": "Mobile updates from {subscriber.recentMf.programName; default=\"64336\"}. Reply STOP to quit. Msg&Data rates may apply. Tech support: sms@txthlp.com",
+      "defaultCatchAllResponse": "Thank you for contacting us. To quit receiving messages reply STOP",
+      "carrierStopResponses": {},
+      "carrierHelpResponses": {},
+      "status": "ACTIVE",
+      "forwardURL": null,
+      "internalProcessing": null,
+      "sessionTimeout": 10800000,
+      "mms": true,
+      "spamPrevention": true,
+      "tcpaCompliant": true,
+      "isHeavyTraffic": false,
+      "fteu": [],
+      "programId": "1892141"
+    }
+  ]
+}

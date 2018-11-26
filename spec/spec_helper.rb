@@ -2,6 +2,7 @@ require 'rubygems'
 require 'bundler'
 require 'revere_mobile/support/webmock'
 require 'revere_mobile/support/url_helpers'
+require 'revere_mobile/support/path_helpers'
 
 require 'simplecov'
 SimpleCov.start

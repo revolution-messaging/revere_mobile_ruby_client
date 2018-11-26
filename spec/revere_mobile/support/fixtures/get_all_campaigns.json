@@ -1,0 +1,49 @@
+{
+  "page": 1,
+  "size": -1,
+  "total": 3,
+  "collection": [
+    {
+      "id": "570e19afe4b0fddd97d6754f",
+      "account": "416fa6177a475eefd68fb5ef",
+      "group": "4e6fa6187a475eefd68fb5f4",
+      "shortCode": "4e8b4b5afda5efeeec370e8a",
+      "name": "Test Campaign",
+      "startDate": "Wed Apr 13 11:02:23 PDT 2016",
+      "endDate": "Wed Apr 13 11:02:23 PDT 2017",
+      "status": "ACTIVE",
+      "mobileFlows": []
+    },
+    {
+      "id": "56ccdc90e4b087593e734bca",
+      "account": "4e6fa6177a475eefd68fb5ef",
+      "group": "56ccdbb9e4b087593e734b23",
+      "shortCode": "4e8b4b5afdn5efeeec370e8a",
+      "name": "Another Test Campaign",
+      "startDate": "Tue Feb 23 14:26:24 PST 2016",
+      "endDate": null,
+      "status": "ACTIVE",
+      "mobileFlows": [
+        "56ccdccfe4b0875932734bde",
+        "56e0ae7fe4b052c006b6374e",
+        "56e99881e4b024f1336a19d8",
+        "583c54cee4b0e8e03b886a2b"
+      ]
+    },
+    {
+      "id": "502520fd0cf236b8a154bf8b",
+      "account": "4e6fa61772475eefd68fb5ef",
+      "group": "50251a010cfr36b8a1545e98",
+      "shortCode": "4e8b1b5afda5efeeec370e8a",
+      "name": "Test Vote",
+      "startDate": "Fri Aug 10 07:55:57 PDT 2012",
+      "endDate": null,
+      "status": "ACTIVE",
+      "mobileFlows": [
+        "502525030cf236b8a154bfc2",
+        "509430b101f280bc6a98bff8",
+        "58c1accde4b0369e60c920fb"
+      ]
+    }
+  ]
+}
