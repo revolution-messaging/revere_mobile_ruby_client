@@ -51,6 +51,11 @@ module RevereMobile
     # @return [String]
     attr_accessor :user_agent
 
+    # The query size sent to the API endpoint. This defaults to 10,
+    # and determines the number of records to return.
+    # @return [number]
+    attr_accessor :query_size
+
     # The user session. This defaults to nil but is written to
     # once the authentication request has been made.
     #
@@ -70,6 +75,7 @@ module RevereMobile
       @api_endpoint = RevereMobile::Default.api_endpoint
       @api_key = RevereMobile::Default.api_key
       @user_agent = RevereMobile::Default.user_agent
+      @query_size = RevereMobile::Default.query_size
       @session = nil
       self
     end

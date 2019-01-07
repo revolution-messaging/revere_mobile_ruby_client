@@ -3,7 +3,7 @@
 module RevereMobile
   class Client
     module Shortcode
-      def shortcodes(params:{})
+      def shortcodes(params: { size: RevereMobile::Default.query_size })
         get(path: 'shortcode', params: params)
       end
     end

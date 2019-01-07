@@ -99,6 +99,30 @@ module RevereMobile
       end
     end
 
+    describe "#query_size" do
+      context 'when no query_size is specified' do
+        it 'sets a default value' do
+          expect(RevereMobile.configuration.query_size)
+            .to eq(RevereMobile::Default.query_size)
+        end
+      end
+
+      context 'when a custom value is supplied' do
+        let(:query_size) { Faker::Number.between(1, 10) }
+
+        before do
+          RevereMobile.configure do |config|
+            config.query_size = query_size
+          end
+        end
+
+        it 'returns the custom value' do
+          expect(RevereMobile.configuration.query_size).to eq(query_size)
+        end
+      end
+    end
+
+
     describe '#inspect' do
       it 'masks the password' do
         password = Faker::Internet.password

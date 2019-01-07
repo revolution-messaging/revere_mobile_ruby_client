@@ -9,7 +9,7 @@ module RevereMobile
 
       describe "#mobileflows" do
         let(:params) { Hash.new }
-        let(:response) { fixture('get_all_mobile_flows.json') }
+        let(:response) { fixture('mobile_flows/get_all_mobile_flows.json') }
         let(:url) { build_url(client: client, path: 'mobileflow') }
 
         before do

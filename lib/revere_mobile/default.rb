@@ -10,6 +10,7 @@ module RevereMobile
     API_ENDPOINT = 'https://mobile.reverehq.com/api/v1/'
     SHORTCODE_ID = nil
     USER_AGENT = "Revere Mobile Ruby Gem #{RevereMobile::VERSION}"
+    QUERY_SIZE = 10
 
     class << self
       def username
@@ -34,6 +35,10 @@ module RevereMobile
 
       def user_agent
         USER_AGENT
+      end
+
+      def query_size
+        QUERY_SIZE
       end
     end
   end

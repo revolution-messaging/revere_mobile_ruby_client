@@ -3,7 +3,7 @@
 module RevereMobile
   class Client
     module MobileFlow
-      def mobileflows(params:{})
+      def mobileflows(params:{ size: RevereMobile::Default.query_size })
         get(path: 'mobileflow', params: params)
       end
     end

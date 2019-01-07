@@ -9,7 +9,7 @@ module RevereMobile
 
       describe "#shortcodes" do
         let(:params) { Hash.new }
-        let(:response) { fixture('get_all_shortcodes.json') }
+        let(:response) { fixture('shortcodes/get_all_shortcodes.json') }
         let(:url) { build_url(client: client, path: 'shortcode') }
 
         before do
