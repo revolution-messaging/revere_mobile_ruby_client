@@ -2,20 +2,24 @@
 
 - TODO: Put some build status things here
 
-
 # Quick Start
 
-
-Install this gem
-
-```sh
-gem install revere_mobile
-```
-
-or you may add this line to your Gemfile
+Add this line to your applications Gemfile:
 
 ```ruby
 gem 'revere_mobile'
+```
+
+And then execute
+
+```sh
+$ bundle
+```
+
+Or install as standalone gem:
+
+```sh
+$ gem install revere_mobile
 ```
 
 # Configuration
@@ -33,7 +37,6 @@ RevereMobile.configure do |config|
   config.user_agent = 'CustomUserAgent'
 end
 ```
-
 
 You can also configure options in a configuration object like so:
 
