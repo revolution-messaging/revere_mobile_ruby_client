@@ -1,10 +1,9 @@
 # The Revere Mobile Ruby Gem
 
 - TODO: Put some build status things here
-- TODO: Put some gem docs here
 
 
-Quick Start
+# Quick Start
 
 
 Install this gem
@@ -13,7 +12,7 @@ Install this gem
 gem install revere_mobile
 ```
 
-or add this line to your gemfile
+or you may add this line to your Gemfile
 
 ```ruby
 gem 'revere_mobile'

@@ -1,2 +1,5 @@
+.bundle
+tmp
 coverage
 .DS_Store
+Gemfile.lock
