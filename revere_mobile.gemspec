@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = RevereMobile::VERSION
   s.authors     = ['Samuel Robertson']
   s.email       = ['samuel.robertson93@gmail.com']
-  s.homepage    = 'http://github.com/robertsonsamuel/revere_mobile'
+  s.homepage    = 'https://github.com/revolution-messaging/revere_mobile_ruby_client'
 
   s.summary     = 'A wrapper for Revere Mobile API. Visit https://revolutionmessaging.com/revere/mobile/ for more information.'
   s.description = s.summary
