@@ -1,6 +1,7 @@
 # The Revere Mobile Ruby Gem
 
-- TODO: Put some build status things here
+[![Build
+Status](https://travis-ci.org/revolution-messaging/revere_mobile_ruby_client.svg?branch=master)](https://travis-ci.org/revolution-messaging/revere_mobile_ruby_client)
 
 # Quick Start
 
