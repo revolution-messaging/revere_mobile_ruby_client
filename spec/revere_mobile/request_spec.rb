@@ -13,6 +13,9 @@ module RevereMobile
       context 'when making a request' do
         before do
           stub_request(:get, url)
+          .to_return(
+            :headers => { 'Set-Cookie' => 'TestCookie;' }
+          )
         end
 
         it 'makes a get request' do
@@ -24,6 +27,9 @@ module RevereMobile
       context 'when passing parameters to the request' do
         before do
           stub_request(:get, url).with(query: params)
+          .to_return(
+            :headers => { 'Set-Cookie' => 'TestCookie;' }
+          )
         end
 
         it 'passes params with the request' do
@@ -45,6 +51,9 @@ module RevereMobile
       context 'when making a request' do
         before do
           stub_request(:post, url)
+          .to_return(
+            :headers => { 'Set-Cookie' => 'TestCookie;' }
+          )
         end
 
         it 'makes a post request' do
@@ -56,6 +65,9 @@ module RevereMobile
       context 'when passing a body to the request' do
         before do
           stub_request(:post, url).with(body: JSON.generate(body))
+          .to_return(
+            :headers => { 'Set-Cookie' => 'TestCookie;' }
+          )
         end
 
         it 'makes a post request with a body' do
@@ -76,6 +88,9 @@ module RevereMobile
       context 'when making a put request' do
         before do
           stub_request(:put, url)
+          .to_return(
+            :headers => { 'Set-Cookie' => 'TestCookie;' }
+          )
         end
 
         it 'makes a put request' do
@@ -87,6 +102,9 @@ module RevereMobile
       context 'when making a put request with a body' do
         before do
           stub_request(:put, url).with(body: JSON.generate(body))
+          .to_return(
+            :headers => { 'Set-Cookie' => 'TestCookie;' }
+          )
         end
 
         it 'makes a put request with the body' do
@@ -102,6 +120,9 @@ module RevereMobile
       context 'when making a request' do
         before do
           stub_request(:delete, url)
+          .to_return(
+            :headers => { 'Set-Cookie' => 'TestCookie;' }
+          )
         end
 
         it 'makes a get request' do
@@ -113,6 +134,9 @@ module RevereMobile
       context 'when passing parameters to the request' do
         before do
           stub_request(:delete, url).with(query: params)
+          .to_return(
+            :headers => { 'Set-Cookie' => 'TestCookie;' }
+          )
         end
 
         it 'passes params with the request' do
