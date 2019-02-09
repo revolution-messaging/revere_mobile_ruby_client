@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    revere_mobile (0.1.0)
+    revere_mobile (0.1.1)
       faraday (~> 0.15.3)
       faraday-cookie_jar (~> 0.0.6)
       faraday_middleware (~> 0.12.2)
