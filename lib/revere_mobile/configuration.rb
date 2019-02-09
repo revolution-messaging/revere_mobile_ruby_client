@@ -76,7 +76,7 @@ module RevereMobile
       @api_key = RevereMobile::Default.api_key
       @user_agent = RevereMobile::Default.user_agent
       @query_size = RevereMobile::Default.query_size
-      @session = nil
+      @session = HTTP::CookieJar.new
       self
     end
 
