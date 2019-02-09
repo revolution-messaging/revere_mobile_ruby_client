@@ -14,14 +14,13 @@ module RevereMobile
         headers: {
           'Accept' => 'application/json; charset=utf-8',
           'User-Agent ' => config.user_agent,
-          'Cookie' => config.session,
           'Authorization' => config.api_key
         }
       }
 
       Faraday::Connection.new(options) do |connection|
         connection.request(:json)
-        connection.use :cookie_jar
+        connection.use :cookie_jar, jar: config.session
         connection.use RevereMobile::Response::RaiseError
         connection.adapter Faraday.default_adapter
       end

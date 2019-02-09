@@ -31,4 +31,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rspec', '~> 3.8.0', '>= 3.8.0'
   s.add_development_dependency 'simplecov', '~> 0.16.1', '>= 0.16.1'
   s.add_development_dependency 'webmock', '~> 3.4.2', '>= 3.4.2'
+  s.add_development_dependency 'awesome_print', '~> 1.8', '>= 1.8'
 end
