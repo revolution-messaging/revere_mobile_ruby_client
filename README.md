@@ -2,6 +2,7 @@
 
 [![Build
 Status](https://travis-ci.org/revolution-messaging/revere_mobile_ruby_client.svg?branch=master)](https://travis-ci.org/revolution-messaging/revere_mobile_ruby_client)
+[![Gem Version](https://badge.fury.io/rb/revere_mobile.svg)](https://badge.fury.io/rb/revere_mobile)
 
 # Quick Start
 
