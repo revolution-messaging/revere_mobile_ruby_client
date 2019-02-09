@@ -3,7 +3,7 @@ require 'spec_helper'
 describe "RevereMobile" do
   it 'has a version number equal to 0.1.0' do
     expect(RevereMobile::VERSION).to_not be nil
-    expect(RevereMobile::VERSION).to eq('0.1.0')
+    expect(RevereMobile::VERSION).to eq('0.1.1')
   end
 
   describe ".client" do
