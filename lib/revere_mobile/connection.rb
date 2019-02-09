@@ -20,7 +20,7 @@ module RevereMobile
 
       Faraday::Connection.new(options) do |connection|
         connection.request(:json)
-        # connection.use :cookie_jar, jar: config.session
+        connection.use :cookie_jar, jar: config.session
         connection.use RevereMobile::Response::RaiseError
         connection.adapter Faraday.default_adapter
       end
