@@ -13,8 +13,8 @@ module RevereMobile
         url: config.api_endpoint,
         headers: {
           'Accept' => 'application/json; charset=utf-8',
-          'User-Agent ' => config.user_agent,
-          'Authorization' => config.api_key
+          'User-Agent ' => config.user_agent || '',
+          'Authorization' => config.api_key || ''
         }
       }
 

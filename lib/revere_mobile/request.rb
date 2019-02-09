@@ -27,7 +27,6 @@ module RevereMobile
     private
 
     def request(method:, path:, params: {}, body: {})
-      puts connection
       response = connection.send(method) do |request|
         request.path = URI.encode(path)
         request.params = params
